@@ -3,98 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bài Tập Lớn - Hệ Thống Quản Lý Sinh Viên</title>
+  <title>DineLex App - Quản Lý Deadline</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-indigo-600 text-white text-center py-10">
-    <h1 class="text-4xl font-bold">🧩 Hệ Thống Quản Lý Sinh Viên</h1>
-    <p class="mt-2 text-lg">Bài tập lớn nhóm - Nộp qua GitHub Pages</p>
+
+  <header class="bg-indigo-600 text-white text-center py-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 DineLex App</h1>
+    <p class="text-xl md:text-2xl font-light italic opacity-90">"Deadline không đuổi bạn mà bạn đuổi deadline"</p>
+    <div class="mt-8">
+      <a href="#features" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">Khám Phá Ngay</a>
+    </div>
   </header>
 
-  <!-- Mô tả dự án -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-10 rounded-xl shadow" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">📘 Thông Tin Dự Án</h2>
-    <p><strong>Tên dự án:</strong> Hệ Thống Quản Lý Sinh Viên</p>
-    <p class="mt-2"><strong>Mô tả vấn đề:</strong> Ứng dụng hỗ trợ giảng viên và sinh viên quản lý thông tin học tập, điểm số và lịch học một cách hiệu quả, thay thế phương thức quản lý thủ công bằng Excel.</p>
+  <section class="max-w-6xl mx-auto p-6 bg-white mt-10 rounded-xl shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-4 border-b pb-2">📖 Tổng Quan Dự Án</h2>
+    <div class="md:flex md:space-x-8">
+      <div class="md:w-2/3">
+        <p class="mb-4 text-justify">
+          <strong>DineLex App</strong> là ứng dụng quản lý deadline được thiết kế đặc biệt dành cho sinh viên, giúp quản lý các công việc, bài tập và dự án một cách khoa học.
+        </p>
+        <p class="mb-4 text-justify">
+          Vấn đề lớn nhất của sinh viên hiện nay là không biết cách quản lý deadline hiệu quả. DineLex giải quyết vấn đề này bằng cách tập trung vào <strong>nhắc nhở thông minh</strong> dựa trên độ ưu tiên, giúp giảm thiểu tình trạng quên hạn.
+        </p>
+      </div>
+      <div class="md:w-1/3 bg-indigo-50 p-4 rounded-lg">
+        <h3 class="font-bold text-indigo-800 mb-2">🎯 Mục tiêu chính:</h3>
+        <ul class="list-disc list-inside space-y-2 text-sm">
+          <li>Hỗ trợ theo dõi, sắp xếp công việc.</li>
+          <li>Thông báo tự động và tùy chỉnh.</li>
+          <li>Giao diện thân thiện trên mobile.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <!-- Tính năng chính -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded-xl shadow" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">✨ Tính Năng Chính</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>👤 Quản lý sinh viên, giảng viên, lớp học</li>
-      <li>🗓️ Xem và đăng ký lịch học</li>
-      <li>📊 Thống kê điểm, xếp hạng</li>
-      <li>🔐 Đăng nhập, phân quyền người dùng</li>
-    </ul>
-  </section>
-
-  <!-- Công nghệ sử dụng -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded-xl shadow" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">⚙️ Công Nghệ Sử Dụng</h2>
+  <section id="features" class="max-w-6xl mx-auto p-6 bg-white mt-8 rounded-xl shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-2">✨ Tính Năng Cốt Lõi (MVP)</h2>
     <div class="overflow-x-auto">
-      <table class="min-w-full border border-gray-300 text-left">
+      <table class="min-w-full border border-gray-200 text-left">
         <thead class="bg-indigo-100">
           <tr>
-            <th class="py-2 px-4">Công Nghệ</th>
-            <th class="py-2 px-4">Mô Tả</th>
+            <th class="py-3 px-6 font-semibold text-indigo-800">Tính Năng</th>
+            <th class="py-3 px-6 font-semibold text-indigo-800">Mô Tả Chi Tiết</th>
           </tr>
         </thead>
-        <tbody>
-          <tr><td class="py-2 px-4">🐍 Python / Django</td><td class="py-2 px-4">Xây dựng backend, xử lý logic</td></tr>
-          <tr><td class="py-2 px-4">💾 PostgreSQL</td><td class="py-2 px-4">Cơ sở dữ liệu chính</td></tr>
-          <tr><td class="py-2 px-4">⚛️ ReactJS</td><td class="py-2 px-4">Xây dựng giao diện người dùng</td></tr>
-          <tr><td class="py-2 px-4">🐳 Docker</td><td class="py-2 px-4">Triển khai môi trường linh hoạt</td></tr>
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="py-3 px-6 font-medium">📝 Tạo & Quản lý Task</td>
+            <td class="py-3 px-6">Cho phép tạo, sửa, xóa và phân loại các đầu việc cần làm.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6 font-medium">🔔 Nhắc nhở thông minh</td>
+            <td class="py-3 px-6">Hệ thống thông báo linh hoạt (Reminders) và tính năng hoãn lại (Snooze).</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6 font-medium">📅 Lịch & Timeline</td>
+            <td class="py-3 px-6">Hiển thị tổng quan các deadline sắp tới trên lịch hoặc dòng thời gian.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6 font-medium">📈 Theo dõi tiến độ</td>
+            <td class="py-3 px-6">Cập nhật trạng thái hoàn thành hoặc phần trăm tiến độ của công việc.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-6 font-medium">⚡ Tạo nhanh (Quick Add)</td>
+            <td class="py-3 px-6">Thêm nhanh deadline mới mà không cần qua nhiều bước phức tạp.</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- Screenshot -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded-xl shadow text-center" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">🖼️ Ảnh Minh Họa</h2>
-    <img src="assets/images/screenshot.png" alt="Giao diện hệ thống" class="rounded-lg shadow-md mx-auto max-w-xl" />
+  <section class="max-w-6xl mx-auto p-6 bg-white mt-8 rounded-xl shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-2">📱 Luồng Người Dùng & Kiến Trúc</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+        <h3 class="font-bold text-center mb-3">1. Kiến trúc thông tin</h3>
+        <img src="./img/MobileDeadlineApp-Infomation Architecture.drawio.png" alt="Information Architecture" class="rounded-lg shadow w-full hover:opacity-90 transition cursor-pointer" onclick="window.open(this.src)">
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+        <h3 class="font-bold text-center mb-3">2. Luồng Đăng nhập</h3>
+        <img src="./img/MobileDeadlineApp-Log in_Sign in.drawio.png" alt="Login Flow" class="rounded-lg shadow w-full hover:opacity-90 transition cursor-pointer" onclick="window.open(this.src)">
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+        <h3 class="font-bold text-center mb-3">3. Luồng Tạo Task</h3>
+        <img src="https://github.com/user-attachments/assets/c40b8fe1-28a0-4648-9446-f9c829141c76" alt="Create Task Flow" class="rounded-lg shadow w-full hover:opacity-90 transition cursor-pointer" onclick="window.open(this.src)">
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+        <h3 class="font-bold text-center mb-3">4. Luồng Tiến độ & Nhắc nhở</h3>
+        <div class="grid grid-cols-2 gap-2">
+           <img src="./img/MobileDeadlineApp-Mark progress.drawio.png" alt="Mark Progress" class="rounded-lg shadow w-full hover:opacity-90 transition cursor-pointer" onclick="window.open(this.src)">
+           <img src="./img/reminderadnsnoooze.png" alt="Reminder Flow" class="rounded-lg shadow w-full hover:opacity-90 transition cursor-pointer" onclick="window.open(this.src)">
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Thành viên nhóm -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded-xl shadow" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">👥 Thành Viên Nhóm</h2>
-    <table class="min-w-full border border-gray-300">
-      <thead class="bg-indigo-100">
-        <tr>
-          <th class="py-2 px-4">Họ Tên</th>
-          <th class="py-2 px-4">Vai Trò</th>
-          <th class="py-2 px-4">Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="py-2 px-4">Nguyễn Văn A</td><td class="py-2 px-4">Backend Developer</td><td class="py-2 px-4">a@example.com</td></tr>
-        <tr><td class="py-2 px-4">Trần Thị B</td><td class="py-2 px-4">Frontend Developer</td><td class="py-2 px-4">b@example.com</td></tr>
-        <tr><td class="py-2 px-4">Lê Văn C</td><td class="py-2 px-4">Tester</td><td class="py-2 px-4">c@example.com</td></tr>
-      </tbody>
-    </table>
+  <section class="max-w-6xl mx-auto p-6 bg-white mt-8 rounded-xl shadow-md" data-aos="fade-up">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold text-indigo-700 mb-4 border-b pb-2">💡 Mô Hình Kinh Doanh</h2>
+        <ul class="space-y-3">
+          <li><strong>🎯 Đối tượng:</strong> Sinh viên đại học (18-25 tuổi), Tech-savvy Gen Z.</li>
+          <li><strong>💰 Dòng doanh thu:</strong>
+            <ul class="list-disc list-inside ml-4 text-gray-600">
+              <li>Đăng ký Premium</li>
+              <li>Mua hàng trong ứng dụng (In-app Purchases)</li>
+              <li>Quảng cáo</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mt-4">
+             <img src="./img/canvas.png" alt="Business Model Canvas" class="rounded shadow w-full">
+        </div>
+      </div>
+
+      <div>
+         <div class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4 border-b pb-2">⚙️ Công Nghệ</h2>
+            <ul class="list-none space-y-2">
+                <li class="flex items-center"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2">Frontend</span> React Native (Cross-platform)</li>
+                <li class="flex items-center"><span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-2">Feature</span> Offline Synchronization</li>
+            </ul>
+         </div>
+
+         <div>
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4 border-b pb-2">🗺️ Định Hướng Phát Triển</h2>
+            <div class="relative pl-4 border-l-4 border-indigo-200 space-y-4">
+                <div>
+                    <h4 class="font-bold text-indigo-600">Giai đoạn 1 (Hiện tại)</h4>
+                    <p class="text-sm">Tập trung vào tính năng cốt lõi (Core Features) thật tốt và dễ dùng.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-600">Giai đoạn 2 (Tương lai)</h4>
+                    <p class="text-sm">Mở rộng module: Dạng bảng (Kanban), Lọc nhãn, Template nâng cao.</p>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Liên kết dự án -->
-  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded-xl shadow" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">🔗 Liên Kết Dự Án</h2>
-    <ul class="list-disc list-inside">
-      <li>🌐 <strong>GitHub Pages:</strong> <a href="https://ten-nhom.github.io/ten-du-an" class="text-indigo-600">https://ten-nhom.github.io/ten-du-an</a></li>
-      <li>💻 <strong>GitHub Repository:</strong> <a href="https://github.com/ten-nhom/ten-du-an" class="text-indigo-600">https://github.com/ten-nhom/ten-du-an</a></li>
-    </ul>
+  <section class="max-w-6xl mx-auto p-6 bg-white mt-8 rounded-xl shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-2">👥 Đội Ngũ Thực Hiện</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-300">
+        <thead class="bg-indigo-100">
+          <tr>
+            <th class="py-3 px-4 text-left">Họ Tên</th>
+            <th class="py-3 px-4 text-left">GitHub Profile</th>
+            <th class="py-3 px-4 text-left">Liên kết</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 font-medium">Nguyễn Thành Lộc</td>
+            <td class="py-3 px-4 text-gray-600">@LocNguyenthanhh</td>
+            <td class="py-3 px-4"><a href="https://github.com/LocNguyenthanhh" target="_blank" class="text-indigo-600 hover:underline">Truy cập</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 font-medium">Nguyễn Đăng Khoa</td>
+            <td class="py-3 px-4 text-gray-600">@dagkoa</td>
+            <td class="py-3 px-4"><a href="https://github.com/dagkoa" target="_blank" class="text-indigo-600 hover:underline">Truy cập</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 font-medium">Huỳnh Thanh Tâm</td>
+            <td class="py-3 px-4 text-gray-600">@Thahn-Tam</td>
+            <td class="py-3 px-4"><a href="https://github.com/Thahn-Tam" target="_blank" class="text-indigo-600 hover:underline">Truy cập</a></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 font-medium">Nguyễn Đoàn Minh Tâm</td>
+            <td class="py-3 px-4 text-gray-600">@mtaamm</td>
+            <td class="py-3 px-4"><a href="https://github.com/mtaamm" target="_blank" class="text-indigo-600 hover:underline">Truy cập</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 text-gray-600 mt-10">
-    © 2025 Nhóm 1 - Hệ Thống Quản Lý Sinh Viên
+  <footer class="bg-gray-800 text-white text-center py-8 mt-12">
+    <p class="font-bold text-lg mb-2">DineLex App</p>
+    <p class="text-sm text-gray-400 mb-4">© 2024 DineLex App. All rights reserved.</p>
+    <div class="flex justify-center space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white transition">GitHub Repo</a>
+        <a href="#" class="text-gray-400 hover:text-white transition">Tài liệu dự án</a>
+    </div>
   </footer>
 
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800, // Thời lượng animation
+      once: true,    // Chỉ chạy 1 lần khi scroll xuống
+    });
   </script>
 </body>
 </html>
